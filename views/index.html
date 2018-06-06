@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+	<body>
+		<h1>Swig</h1>
+		<br>
+		<h2>Looping</h2>
+		<br>
+		<h3>Obvious truth</h3>
+		<ul>
+		{% for l in list %}
+			<li>{{l}}</li>
+		{% endfor %}	
+		</ul>	
+		<h3>if conditions to print even places index is 0</h3>
+		<ul>
+		{% for l in list %}
+			{% if (loop.index0%2==0) %}
+			<li>{{l}}</li>
+			{% endif %}
+		{% endfor %}	
+		</ul>	
+	</body>	
+</html>
